@@ -21,9 +21,11 @@ const HeaderItems = () => {
       <S.Item>
         <S.Text>Items</S.Text>
       </S.Item>
+
       <S.Item>
         <S.Cost>$0.00</S.Cost>
       </S.Item>
+
       <S.Item>
         <Search />
       </S.Item>

@@ -11,8 +11,11 @@ export default function Layout({
 }: LayoutProp) {
   return (
     <>
-      <Header />
-      <Container>{children}</Container>
+      <Container>
+        <Header />
+      </Container>
+      <S.Divider />
+      <main>{children}</main>
       {/*Footer */}
     </>
   );

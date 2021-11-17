@@ -9,11 +9,12 @@ export const ItemsWrapper = styled.div`
 `;
 export const Item = styled.div`
   display: flex;
+  justify-content: center;
   align-items: center;
 `;
 export const Text = styled.p`
   color: #262626;
-  font-size: 20px;
+  font-size: 1em;
   font-style: normal;
   font-weight: 400;
   text-align: left;
@@ -26,7 +27,7 @@ export const Cost = styled(Text)`
 export const Count = styled.div`
   position: absolute;
   top: 0px;
-  right: 10px;
+  right: 0px;
   display: flex;
   justify-content: center;
   align-items: center;

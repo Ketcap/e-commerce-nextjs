@@ -1,3 +1,6 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div``;
+export const Divider = styled.div`
+  width: 100%;
+  border-bottom: 2px solid #fafafb;
+`;

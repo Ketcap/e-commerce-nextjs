@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Image from "next/image";
+import PromotionImage from "../Images/PromotionImage.png";
 import styles from "../styles/Home.module.css";
 import { gql } from "@apollo/client";
 import client from "../utils/apollo-client";
@@ -23,6 +25,10 @@ const Home = ({ countries }: Props) => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Image
+        src={PromotionImage}
+        alt="Picture of the author"
+      />
     </div>
   );
 };

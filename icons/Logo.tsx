@@ -1,25 +1,27 @@
+import * as React from "react";
+
 function Logo(
   props: React.SVGProps<SVGSVGElement>,
 ) {
   return (
     <svg
-      width={97}
-      height={97}
+      width={44}
+      height={45}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
       <rect
-        y={0.404}
-        width={96.584}
-        height={96.584}
+        y={0.002}
+        width={44}
+        height={44}
         rx={16}
         fill="#40BFFF"
       />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M68.184 44.902a5.366 5.366 0 010 7.588L52.086 68.587a5.366 5.366 0 01-7.588 0L28.401 52.49a5.366 5.366 0 010-7.588l16.097-16.098a5.366 5.366 0 017.588 0l16.098 16.098zm-19.892-4.715l-8.509 8.509 8.51 8.509 8.508-8.51-8.509-8.508z"
+        d="M31.062 20.274a2.445 2.445 0 010 3.457l-7.334 7.333a2.444 2.444 0 01-3.456 0l-7.334-7.333a2.445 2.445 0 010-3.457l7.334-7.333a2.444 2.444 0 013.457 0l7.333 7.333zM22 18.126l-3.876 3.876L22 25.88l3.876-3.877L22 18.126z"
         fill="#fff"
       />
     </svg>

@@ -1,0 +1,58 @@
+export const bestSellers = [
+  {
+    title: "Nike Air Max 270 React",
+    cost: "$534,33",
+    newCost: "$299,43",
+    discount: "24% Off",
+    image: "/Images/imageProduct.png",
+  },
+  {
+    title: "Nike Air Max 270 React",
+    cost: "$534,33",
+    newCost: "$299,43",
+    discount: "24% Off",
+    image: "/Images/imageProduct.png",
+  },
+  {
+    title: "Nike Air Max 270 React",
+    cost: "$534,33",
+    newCost: "$299,43",
+    discount: "24% Off",
+    image: "/Images/imageProduct.png",
+  },
+  {
+    title: "Nike Air Max 270 React",
+    cost: "$534,33",
+    newCost: "$299,43",
+    discount: "24% Off",
+    image: "/Images/imageProduct.png",
+  },
+  {
+    title: "Nike Air Max 270 React",
+    cost: "$534,33",
+    newCost: "$299,43",
+    discount: "24% Off",
+    image: "/Images/imageProduct.png",
+  },
+  {
+    title: "Nike Air Max 270 React",
+    cost: "$534,33",
+    newCost: "$299,43",
+    discount: "24% Off",
+    image: "/Images/imageProduct.png",
+  },
+  {
+    title: "Nike Air Max 270 React",
+    cost: "$534,33",
+    newCost: "$299,43",
+    discount: "24% Off",
+    image: "/Images/imageProduct.png",
+  },
+  {
+    title: "Nike Air Max 270 React",
+    cost: "$534,33",
+    newCost: "$299,43",
+    discount: "24% Off",
+    image: "/Images/imageProduct.png",
+  },
+];

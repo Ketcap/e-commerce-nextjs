@@ -5,7 +5,6 @@ export const NavbarWrapper = styled.nav`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  border: 1px solid black;
   padding: 1em 0;
 `;
 export const Banner = styled.div`

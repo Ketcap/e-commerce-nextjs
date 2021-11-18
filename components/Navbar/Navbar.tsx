@@ -1,5 +1,5 @@
 import Text from "components/Text/Text";
-import { NAVBAR } from "constants/Navbar";
+import { NAVBAR } from "constants/index";
 import { Logo } from "icons";
 import * as S from "./style";
 

@@ -11,14 +11,15 @@ export type TextProps = {
     | "banner"
     | "header"
     | "cost"
-    | "navbar";
+    | "navbar"
+    | "promotion";
   onClick?: () => void;
 };
 
 const Text = ({
   children,
   textAlign,
-  color = colors.currentDark,
+  color,
   lineHeight,
   variant,
   onClick,
@@ -30,9 +31,15 @@ const Text = ({
   return (
     <S.Text
       textAlign={textAlign}
-      color={color}
+      color={
+        variant === "promotion"
+          ? "#FFFFFF"
+          : undefined
+      }
       marginLeft={
-        variant === "header" ? 6 : undefined
+        variant === "header" || "banner"
+          ? 6
+          : undefined
       }
       opacity={
         variant === "cost" ? 0.5 : undefined

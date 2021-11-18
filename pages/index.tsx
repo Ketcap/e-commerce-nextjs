@@ -1,14 +1,11 @@
 import Head from "next/head";
-import Image from "next/image";
-import PromotionImage from "../Images/PromotionImage.png";
-import styles from "../styles/Home.module.css";
 import { gql } from "@apollo/client";
 import client from "../utils/apollo-client";
 import {
   CountrylistDocument,
   CountrylistQuery,
 } from "../codegen/generated/graphql";
-import { Container, Header } from "../components";
+import { LandingFeature } from "components";
 
 interface Props {
   countries: CountrylistQuery["countries"];
@@ -25,10 +22,7 @@ const Home = ({ countries }: Props) => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Image
-        src={PromotionImage}
-        alt="Picture of the author"
-      />
+      <LandingFeature />
     </div>
   );
 };

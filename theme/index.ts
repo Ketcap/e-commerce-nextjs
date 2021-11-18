@@ -26,4 +26,18 @@ export const typography = {
     fontSize: 1.5,
     lineHeight: 36,
   },
+  promotion: {
+    fontWeight: "bold",
+    fontSize: 4,
+    lineHeight: 96,
+    letterSpacing: 0.5,
+  },
+  promotionCard: {
+    title: {
+      fontWeight: "bold",
+      fontSize: 20,
+      lineHeight: 30,
+      letterSpacing: 0.5,
+    },
+  },
 };

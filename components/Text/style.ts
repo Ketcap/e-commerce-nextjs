@@ -7,6 +7,7 @@ interface StyledTextProps {
   lineHeight?: string;
   marginLeft?: number;
   opacity?: number;
+  color?: string;
 }
 
 export const Text = styled.p<StyledTextProps>`
@@ -18,4 +19,5 @@ export const Text = styled.p<StyledTextProps>`
   margin-left: ${({ marginLeft }) =>
     marginLeft}px;
   opacity: ${({ opacity }) => opacity};
+  color: ${({ color }) => color};
 `;

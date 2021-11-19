@@ -1,20 +1,23 @@
-import * as S from "./style";
 import Image from "next/image";
-import stars from "public/Images/stars.png";
-import Text from "components/Text/Text";
+
+import { Text } from "components";
+
 import {
   colors,
   fontSizes,
   fontWeights,
 } from "theme";
-import { AddCart, Favorite } from "icons";
+import stars from "public/Images/stars.png";
+
+import * as S from "./style";
+
 const Item = ({ item }: any) => {
   return (
     <S.ItemWrapper>
       <S.ItemSelections>
         <S.HoverFeature>
           <S.StyledFavorite />
-          <AddCart />
+          <S.StyledAddCart />
         </S.HoverFeature>
         <S.StyledImage
           src={item.image}

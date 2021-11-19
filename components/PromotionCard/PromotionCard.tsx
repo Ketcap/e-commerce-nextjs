@@ -1,9 +1,11 @@
-import Text from "components/Text/Text";
+import { Text } from "components";
+
 import {
   colors,
   fontSizes,
   fontWeights,
 } from "theme";
+
 import * as S from "./style";
 
 const PromotionCard = ({ card }: any) => {
@@ -16,7 +18,7 @@ const PromotionCard = ({ card }: any) => {
       <S.CardTextWrapper>
         <S.CardTextLeft>
           <Text
-            fontWeight={fontWeights.bold}
+            fontWeight={fontWeights.bolder}
             fontSize={fontSizes.xxmedium}
             color={colors.neutralDark}
           >

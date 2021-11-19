@@ -1,4 +1,4 @@
-import Text from "components/Text/Text";
+import { Text } from "components";
 import styled from "styled-components";
 import { colors } from "theme/index";
 

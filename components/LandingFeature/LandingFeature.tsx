@@ -1,18 +1,20 @@
 import {
-  Container,
   PromotionCard,
   PromotionImage,
+  Item,
+  Text,
 } from "components";
-import Item from "components/Item/Item";
-import Text from "components/Text/Text";
+
 import { BEST_SELLER_NAV } from "constants/index";
 import { bestSellers } from "mock/Bestsellers";
 import { promotionCard } from "mock/PromotionCard";
+
 import {
   colors,
   fontSizes,
   fontWeights,
 } from "theme";
+
 import * as S from "./style";
 
 const LandingFeature = () => {
@@ -32,10 +34,10 @@ const LandingFeature = () => {
       <S.BestSellerWrapper>
         <Text
           color={colors.secondaryBlack}
-          fontWeight={fontWeights.medium}
+          fontWeight={fontWeights.bold}
           fontSize={fontSizes.xlarge}
         >
-          Best Seller
+          BEST SELLER
         </Text>
         <S.BestSellerNavs>
           {BEST_SELLER_NAV.map((item, key) => (

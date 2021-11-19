@@ -27,7 +27,8 @@ export const fontWeights = {
   light: "300",
   regular: "400",
   medium: "500",
-  bold: "700",
+  bold: "600",
+  bolder: "700",
 };
 
 export const letterSpacing = {

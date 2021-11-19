@@ -12,6 +12,7 @@ interface StyledTextProps {
 }
 
 export const Text = styled.p<StyledTextProps>`
+  font-style: normal;
   text-align: ${({ textAlign }) => textAlign};
   font-size: ${({ fontSize }) => fontSize};
   font-weight: ${({ fontWeight }) => fontWeight};

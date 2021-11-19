@@ -1,11 +1,13 @@
-import Text from "components/Text/Text";
-import { NAVBAR } from "constants/index";
+import { Text } from "components";
 import { Logo } from "icons";
+
+import { NAVBAR } from "constants/index";
 import {
   colors,
   fontSizes,
   fontWeights,
 } from "theme";
+
 import * as S from "./style";
 
 const Navbar = () => {
@@ -24,14 +26,14 @@ const Navbar = () => {
       </S.Banner>
       <S.NavbarLinks>
         {NAVBAR.map((item, key) => (
-          <Text
+          <S.StyledText
             color={colors.defaultBlack}
             fontSize={fontSizes.medium}
             fontWeight={fontWeights.medium}
             key={key}
           >
             {item}
-          </Text>
+          </S.StyledText>
         ))}
       </S.NavbarLinks>
     </S.NavbarWrapper>

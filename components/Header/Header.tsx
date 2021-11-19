@@ -1,12 +1,15 @@
-import Text from "components/Text/Text";
+import { Dropdown, Text } from "components";
+
 import { Cart, Profile, Search } from "icons";
-import { DROPDOWN_DATAS } from "mock/Dropdown";
+
 import {
   colors,
   fontSizes,
   fontWeights,
 } from "theme";
-import Dropdown from "../Dropdown/Dropdown";
+
+import { DROPDOWN_DATAS } from "mock/Dropdown";
+
 import * as S from "./style";
 
 const Header = () => {

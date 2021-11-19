@@ -1,12 +1,17 @@
-import * as S from "./style";
-import img from "public/Images/PromotionImage.png";
-import Text from "components/Text/Text";
+import { Text } from "components";
+
 import { OFFER_BANNER } from "constants/index";
+
 import {
   colors,
   fontSizes,
   fontWeights,
 } from "theme";
+
+import img from "public/Images/PromotionImage.png";
+
+import * as S from "./style";
+
 const PromotionImage = () => {
   return (
     <S.PromotionImageWrapper>
@@ -19,7 +24,7 @@ const PromotionImage = () => {
         <Text
           color={colors.white}
           fontSize={fontSizes.large}
-          fontWeight={fontWeights.bold}
+          fontWeight={fontWeights.bolder}
         >
           {OFFER_BANNER}
         </Text>

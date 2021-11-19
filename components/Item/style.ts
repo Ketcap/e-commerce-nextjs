@@ -1,6 +1,7 @@
-import { Favorite } from "icons";
+import { AddCart, Favorite } from "icons";
 import Image from "next/image";
 import styled from "styled-components";
+
 export const ItemWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -53,4 +54,9 @@ export const ItemSelections = styled.div`
 `;
 export const StyledFavorite = styled(Favorite)`
   cursor: pointer;
+  margin-right: 6px;
+`;
+export const StyledAddCart = styled(AddCart)`
+  cursor: pointer;
+  margin-left: 6px;
 `;

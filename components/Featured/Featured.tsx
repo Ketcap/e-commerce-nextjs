@@ -1,7 +1,10 @@
-import { FeaturedCard } from "components";
-import * as S from "./styles";
 import Image from "next/image";
+
+import { FeaturedCard } from "components";
+
 import PromotionImage from "public/promotionImage.png";
+import * as S from "./styles";
+
 const Featured = () => {
   return (
     <S.Featured>

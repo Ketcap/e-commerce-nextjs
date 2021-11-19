@@ -1,5 +1,6 @@
-import { MyProfile } from "icons";
 import styled from "styled-components";
+
+import { MyProfile } from "icons";
 
 import { colors } from "theme";
 

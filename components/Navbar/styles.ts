@@ -24,8 +24,6 @@ export const LogoText = styled.p`
 `;
 export const Right = styled.div`
   display: flex;
-
-  align-items: center;
 `;
 export const NavText = styled.p`
   font-family: Poppins;
@@ -38,7 +36,7 @@ export const NavText = styled.p`
   :hover {
     color: ${colors.primaryBlue};
   }
-  margin: 0 90px;
+  margin: 0 40px;
   :first-child {
     margin-left: 0;
   }

@@ -1,4 +1,5 @@
 import { Basket, Search } from "icons";
+
 import * as S from "./styles";
 
 const Header = () => {

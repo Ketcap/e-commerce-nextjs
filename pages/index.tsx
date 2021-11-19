@@ -3,12 +3,8 @@ import Head from "next/head";
 
 import { gql } from "@apollo/client";
 import client from "../utils/apollo-client";
-import {
-  Featured,
-  Header,
-  Navbar,
-  Card,
-} from "components";
+import { LandingPage } from "layouts";
+import { BestSeller, Featured } from "components";
 
 const Home: NextPage = ({ countries }: any) => {
   console.log(countries);
@@ -22,10 +18,12 @@ const Home: NextPage = ({ countries }: any) => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
-      <Navbar />
-      <Featured />
-      <Card />
+      <LandingPage>
+        <>
+          <Featured />
+          <BestSeller />
+        </>
+      </LandingPage>
     </div>
   );
 };

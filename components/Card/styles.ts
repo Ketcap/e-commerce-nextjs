@@ -1,8 +1,8 @@
 import styled from "styled-components";
+
 import { colors } from "theme";
 
 export const Container = styled.div`
-  margin: 200px;
   position: relative;
   width: 298px;
   height: 385px;
@@ -10,13 +10,44 @@ export const Container = styled.div`
   flex-direction: column;
   border: 3px solid ${colors.cardBorder};
 `;
+export const HoverImage = styled.div`
+  width: 278px;
+  height: 219px;
+  background: #ffffff;
+  opacity: 0.95;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+`;
 
 export const ImageContainer = styled.div`
   background-image: url("/cardImage.png");
   background-repeat: no-repeat;
-
   height: 358.31px;
   border-radius: 8px;
+
+  :hover {
+    ~ ${HoverImage} {
+      display: flex;
+    }
+  }
+`;
+
+export const IconContainer = styled.div`
+  padding: 16px;
+  border-radius: 50%;
+  border: 2px solid rgba(51, 160, 255, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  :first-child {
+    margin-right: 12px;
+  }
 `;
 export const Hot = styled.div`
   background-color: ${colors.lightRed};

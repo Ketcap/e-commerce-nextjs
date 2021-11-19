@@ -1,4 +1,5 @@
 import { Logo } from "icons";
+
 import * as S from "./styles";
 
 const Navbar = () => {

@@ -1,6 +1,11 @@
 import Text from "components/Text/Text";
 import { Cart, Profile, Search } from "icons";
 import { DROPDOWN_DATAS } from "mock/Dropdown";
+import {
+  colors,
+  fontSizes,
+  fontWeights,
+} from "theme";
 import Dropdown from "../Dropdown/Dropdown";
 import * as S from "./style";
 
@@ -16,22 +21,46 @@ const Header = () => {
         <S.ItemsWrapper>
           <S.Item>
             <Profile />
-            <Text variant="header">
+            <Text
+              color={colors.defaultBlack}
+              fontSize={fontSizes.xxmedium}
+              fontWeight={fontWeights.regular}
+              marginLeft={6}
+            >
               My Profile
             </Text>
           </S.Item>
 
           <S.CartItem>
-            <S.Count>2</S.Count>
+            <S.Count
+              color={colors.white}
+              fontWeight={fontWeights.bold}
+              fontSize={fontSizes.xxxsmall}
+            >
+              2
+            </S.Count>
             <Cart />
           </S.CartItem>
 
           <S.Item>
-            <Text variant="header">Items</Text>
+            <Text
+              color={colors.defaultBlack}
+              fontSize={fontSizes.xxmedium}
+              fontWeight={fontWeights.regular}
+            >
+              Items
+            </Text>
           </S.Item>
 
           <S.Item>
-            <Text variant="cost">$0.00</Text>
+            <Text
+              color={colors.defaultBlack}
+              fontSize={fontSizes.xxmedium}
+              fontWeight={fontWeights.regular}
+              opacity
+            >
+              $0.00
+            </Text>
           </S.Item>
 
           <S.Item>

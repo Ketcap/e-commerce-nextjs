@@ -1,6 +1,12 @@
 import * as S from "./style";
 import Image from "next/image";
 import stars from "public/Images/stars.png";
+import Text from "components/Text/Text";
+import {
+  colors,
+  fontSizes,
+  fontWeights,
+} from "theme";
 const Item = ({ item }: any) => {
   return (
     <S.ItemWrapper>
@@ -10,7 +16,13 @@ const Item = ({ item }: any) => {
         height={272}
       />
       <S.ItemDetails>
-        <S.ItemTitle>{item.title}</S.ItemTitle>
+        <Text
+          color={colors.neutralDark}
+          fontSize={fontSizes.small}
+          fontWeight={fontWeights.bold}
+        >
+          {item.title}
+        </Text>
         <Image
           src={stars}
           alt="stars"
@@ -18,13 +30,28 @@ const Item = ({ item }: any) => {
           height={15}
         />
         <S.CostWrapper>
-          <S.ItemNewCOst>
+          <Text
+            color={colors.brandPrimaryBlue}
+            fontSize={fontSizes.small}
+            fontWeight={fontWeights.bold}
+          >
             {item.newCost}
-          </S.ItemNewCOst>
-          <S.ItemCost>{item.cost}</S.ItemCost>
-          <S.ItemDiscount>
+          </Text>
+          <Text
+            color={colors.neutralGrey}
+            fontSize={fontSizes.xsmall}
+            fontWeight={fontWeights.regular}
+            textLine
+          >
+            {item.cost}
+          </Text>
+          <Text
+            color={colors.brandPink}
+            fontSize={fontSizes.xsmall}
+            fontWeight={fontWeights.bold}
+          >
             {item.discount}
-          </S.ItemDiscount>
+          </Text>
         </S.CostWrapper>
       </S.ItemDetails>
     </S.ItemWrapper>

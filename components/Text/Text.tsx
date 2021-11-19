@@ -1,18 +1,15 @@
-import { colors, typography } from "theme";
 import * as S from "./style";
 
 export type TextProps = {
-  children: JSX.Element | string;
-  textAlign?: "left";
-  color?: string;
-  marginLeft?: number;
+  children: string;
+  textAlign?: string;
+  color: string;
   lineHeight?: string;
-  variant:
-    | "banner"
-    | "header"
-    | "cost"
-    | "navbar"
-    | "promotion";
+  fontSize: string;
+  fontWeight: string;
+  marginLeft?: number;
+  opacity?: boolean;
+  textLine?: boolean;
   onClick?: () => void;
 };
 
@@ -21,32 +18,24 @@ const Text = ({
   textAlign,
   color,
   lineHeight,
-  variant,
+  fontWeight,
+  fontSize,
+  marginLeft,
+  opacity,
+  textLine,
   onClick,
   ...props
 }: TextProps) => {
-  const { fontSize, fontWeight } =
-    typography[variant];
-
   return (
     <S.Text
       textAlign={textAlign}
-      color={
-        variant === "promotion"
-          ? "#FFFFFF"
-          : undefined
-      }
-      marginLeft={
-        variant === "header" || "banner"
-          ? 6
-          : undefined
-      }
-      opacity={
-        variant === "cost" ? 0.5 : undefined
-      }
+      color={color}
+      marginLeft={marginLeft}
+      opacity={opacity}
       fontSize={fontSize}
       fontWeight={fontWeight}
       lineHeight={lineHeight}
+      textLine={textLine}
       onClick={onClick}
       {...props}
     >

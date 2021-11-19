@@ -1,23 +1,26 @@
 import styled from "styled-components";
 
 interface StyledTextProps {
-  textAlign?: "left";
-  fontSize?: number;
-  fontWeight?: string | number;
-  lineHeight?: string;
+  textAlign?: string;
+  color: string;
+  lineHeight?: "24" | string;
+  fontSize: string;
+  fontWeight: string;
   marginLeft?: number;
-  opacity?: number;
-  color?: string;
+  opacity?: boolean;
+  textLine?: boolean;
 }
 
 export const Text = styled.p<StyledTextProps>`
   text-align: ${({ textAlign }) => textAlign};
-  font-size: ${({ fontSize }) => fontSize}em;
+  font-size: ${({ fontSize }) => fontSize};
   font-weight: ${({ fontWeight }) => fontWeight};
   line-height: ${({ lineHeight }) =>
     lineHeight}px;
   margin-left: ${({ marginLeft }) =>
     marginLeft}px;
-  opacity: ${({ opacity }) => opacity};
+  opacity: ${({ opacity }) => opacity && 0.5};
   color: ${({ color }) => color};
+  text-decoration-line: ${({ textLine }) =>
+    textLine && "line-through"};
 `;

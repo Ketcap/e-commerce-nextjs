@@ -1,3 +1,9 @@
+import Text from "components/Text/Text";
+import {
+  colors,
+  fontSizes,
+  fontWeights,
+} from "theme";
 import * as S from "./style";
 
 const PromotionCard = ({ card }: any) => {
@@ -9,19 +15,41 @@ const PromotionCard = ({ card }: any) => {
       />
       <S.CardTextWrapper>
         <S.CardTextLeft>
-          <S.CardTitle>{card.title}</S.CardTitle>
+          <Text
+            fontWeight={fontWeights.bold}
+            fontSize={fontSizes.xxmedium}
+            color={colors.neutralDark}
+          >
+            {card.title}
+          </Text>
+
           <S.LeftBottom>
-            <S.CardCost>{card.cost}</S.CardCost>
-            <S.CardDiscount>
+            <Text
+              fontWeight={fontWeights.medium}
+              fontSize={fontSizes.xxmedium}
+              color={colors.neutralGrey}
+              textLine
+            >
+              {card.cost}
+            </Text>
+            <Text
+              fontWeight={fontWeights.bold}
+              fontSize={fontSizes.small}
+              color={colors.brandPink}
+            >
               {card.discount}
-            </S.CardDiscount>
+            </Text>
           </S.LeftBottom>
         </S.CardTextLeft>
 
         <S.CardTextRight>
-          <S.CardNewCost>
+          <Text
+            fontWeight={fontWeights.bold}
+            fontSize={fontSizes.xxlarge}
+            color={colors.brandPrimaryBlue}
+          >
             {card.newCost}
-          </S.CardNewCost>
+          </Text>
         </S.CardTextRight>
       </S.CardTextWrapper>
     </S.PromotionCardWrapper>

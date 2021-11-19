@@ -1,3 +1,4 @@
+import Text from "components/Text/Text";
 import styled from "styled-components";
 import { colors } from "theme/index";
 
@@ -30,26 +31,8 @@ export const Item = styled.div`
   justify-content: center;
   align-items: center;
 `;
-export const Text = styled.p`
-  color: #262626;
-  font-size: 1em;
-  font-style: normal;
-  font-weight: 400;
-  text-align: left;
-  margin-left: 6px;
-  user-select: none;
-`;
-export const Cost = styled.p`
-  color: #262626;
-  font-size: 1em;
-  font-style: normal;
-  font-weight: 400;
-  text-align: left;
-  margin-left: 6px;
-  user-select: none;
-  opacity: 0.5;
-`;
-export const Count = styled.div`
+
+export const Count = styled(Text)`
   position: absolute;
   top: 0px;
   right: 0px;
@@ -58,13 +41,10 @@ export const Count = styled.div`
   align-items: center;
   height: 20px;
   width: 20px;
-  background-color: ${colors.primaryPink};
+  background-color: ${colors.brandPink};
   border-radius: 50%;
   user-select: none;
   border: 2px solid #ffffff;
-  font-weight: bold;
-  font-size: 10px;
-  color: #ffffff;
 `;
 
 export const CartItem = styled.div`

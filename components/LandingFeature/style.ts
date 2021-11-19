@@ -22,13 +22,7 @@ export const BestSellerWrapper = styled.section`
   width: 100%;
   height: 1010px;
 `;
-export const Title = styled.h1`
-  font-weight: 600;
-  font-size: 35px;
-  line-height: 52px;
-  color: #22262a;
-  text-align: center;
-`;
+
 export const BestSellerNavs = styled.div`
   display: flex;
   flex-direction: row;
@@ -37,14 +31,9 @@ export const BestSellerNavs = styled.div`
   width: 50%;
   margin-top: 26px;
 `;
-export const NavTitle = styled.h1`
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 33px;
-  text-align: center;
-`;
+
 export const BestSellerItemWrapper = styled.div`
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-gap: 30px;
+  grid-gap: 20px;
 `;

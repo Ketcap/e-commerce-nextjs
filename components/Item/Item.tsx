@@ -7,14 +7,21 @@ import {
   fontSizes,
   fontWeights,
 } from "theme";
+import { AddCart, Favorite } from "icons";
 const Item = ({ item }: any) => {
   return (
     <S.ItemWrapper>
-      <S.StyledImage
-        src={item.image}
-        width={299}
-        height={272}
-      />
+      <S.ItemSelections>
+        <S.HoverFeature>
+          <S.StyledFavorite />
+          <AddCart />
+        </S.HoverFeature>
+        <S.StyledImage
+          src={item.image}
+          width={299}
+          height={272}
+        />
+      </S.ItemSelections>
       <S.ItemDetails>
         <Text
           color={colors.neutralDark}

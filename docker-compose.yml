@@ -1,0 +1,13 @@
+version: '3'
+services:
+  db:
+    image: postgres:12
+    restart: always
+    environment:
+      POSTGRES_USER: prisma
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: e-commerce
+    ports:
+      - '5432:5432'
+volumes:
+  postgres: ~

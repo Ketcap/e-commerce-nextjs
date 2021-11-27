@@ -13,7 +13,8 @@
     "db:studio": "prisma studio",
     "generate:nexus": "NODE_ENV=development ts-node  --transpile-only ./schema/index.ts",
     "generate:prisma": "prisma generate",
-    "generate": "npm run generate:prisma && npm run generate:nexus"
+    "generate": "npm run generate:prisma && npm run generate:nexus",
+    "postinstall": "npm run generate"
   },
   "dependencies": {
     "@apollo/client": "^3.4.17",

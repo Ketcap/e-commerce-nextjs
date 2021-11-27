@@ -14,13 +14,10 @@ model Product {
   id String @id @default(cuid())
 
   name  String
-  price String
+  price Int
 
   // fix Categories
   categories Category[] @relation(name: "Category_Product")
-
-  defaultVariantId String
-  DefaultVariant ProductVariant @relation(fields: [defaultVariantId], references:[id], name:"Product_Default_Variant")
 
   ProductVariants ProductVariant[]
 }
@@ -36,10 +33,12 @@ model Category {
 model ProductVariant {
   id String @id @default(cuid())
 
+  name String
+  price Int
+  
+  isDefault Boolean @default(false)
   stockAmount Int @default(0)
 
   Product   Product @relation(fields: [productId], references: [id], onDelete:Cascade)
   productId String
-
-  DefaultProduct Product? @relation(name:"Product_Default_Variant")
 }

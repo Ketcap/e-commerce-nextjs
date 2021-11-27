@@ -9,9 +9,9 @@ type Category {
 type Product {
   id: String!
   name: String!
-  price: String!
+  price: Int!
 }
 
 type Query {
-  myQuery: [Category!]!
+  categories: [Category!]!
 }

@@ -5,7 +5,10 @@ import * as types from './schema';
 
 export const schema = makeSchema({
   types,
-  plugins: [nexusPrisma()],
+  plugins: [nexusPrisma({
+    experimentalCRUD:true,
+    
+  })],
   outputs: {
     schema: `${__dirname}/../generated/generated.graphql`,
     typegen: `${__dirname}/../node_modules/@types/nexus-typegen/index.d.ts`

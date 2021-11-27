@@ -1,8 +1,8 @@
 import { list, queryField } from "nexus";
 
-export const categories = queryField("categories",{
+export const categories = queryField("categories", {
   type: list("Category"),
-  resolve:async (_,args,ctx)=>{
+  resolve: async (_, args, ctx) => {
     return ctx.prisma.category.findMany();
   }
 })
